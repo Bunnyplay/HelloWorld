@@ -1,0 +1,21 @@
+<?xml version='1.0' ?>
+<codeFramework xmlns = "http://www.3ds.ic" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation = "http://www.3ds.ic ICModel.xsd">
+  <!--====-  20091217 automatically added   ==============
+====- not initially targeted on MacOS ==============-->
+  <built value = "false" osConstraint = "Darwin || Linux || SunOS"/>
+  <!--COPYRIGHT DASSAULT SYSTEMES 2010
+===================================================================
+CAA Education framework for PLMSetupDataInterfaces APIs
+===================================================================-->
+  <prerequisite name = "CATPLMComponentInterfaces" access = "Public"/>
+  <prerequisite name = "System" access = "Public" expose = "ExposePrereq"/>
+  <!--20110503 ADT/HPN System Split-->
+  <prerequisite name = "SystemTS" access = "Public"/>
+  <!--End 20110503-->
+  <prerequisite name = "CATPLMIdentificationAccess" access = "Public" expose = "ExposePrereq"/>
+  <!--AddPrereqComponent ("PLMLibraryNavUseItf",Public  ,Exported,ExposePrereq);-->
+  <prerequisite name = "XMLParserItf" access = "Public" expose = "ExposePrereq"/>
+  <prerequisite name = "PLMSetupDataInterfaces" access = "Public" export = "DoNotAddToClientPrereqs" expose = "DoNotExposePrereq"/>
+  <prerequisite name = "KnowledgeInterfaces" access = "Public" export = "DoNotAddToClientPrereqs" expose = "DoNotExposePrereq"/>
+  <prerequisite name = "SpecialAPI" access = "Public" export = "DoNotAddToClientPrereqs" expose = "DoNotExposePrereq"/>
+</codeFramework>
